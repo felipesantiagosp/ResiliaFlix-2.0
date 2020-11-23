@@ -1,7 +1,4 @@
-header{
-    background-attachment: fixed;
-}
- .logo-search{
+.logo-search{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -16,9 +13,9 @@ header{
     color: white;
 }
 #search{
-    border: 2px solid #1c2b2d;
+    border: 1px solid #1c2b2d;
     border-radius: 10px;
-    width: 200px;
+    width: 50px;
     height: 30px;
     margin-left: 100px;
     width: 200px;
@@ -31,12 +28,17 @@ header{
     font-weight: bold;
 }
 .botao{
-    border: 1px solid #e6d5b8;
-    background: #1f6f8b;
+    border: 1px solid #1c2b2d;
+    background: white;
     border-radius: 20px;
     color: white;
     font-weight: bold;
+    margin-left: 5px;
 }
+.botao:hover{
+    background: rgb(233, 222, 222)
+}
+
 /* .align{
     align-self: flex-end    ;
 } */
@@ -50,7 +52,7 @@ header{
     margin-left: 30px;
 }
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0%;
     width: 100%;
 }
