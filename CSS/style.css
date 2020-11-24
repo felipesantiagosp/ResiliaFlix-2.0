@@ -3,23 +3,32 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 30px; 
-    margin-left: 400px;
+    margin-left: 450px;
 }
 .procurar {
     display: flex;
     justify-content: space-around;
 }
 .botao1{
+    border: 1px solid #1c2b2d;
+    background: #1f6f8b;
+    border-radius: 20px;
     color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    height: 20px;
+}
+.botao1:hover{
+    background: #1d5a70;
 }
 #search{
     border: 1px solid #1c2b2d;
     border-radius: 10px;
     width: 50px;
     height: 30px;
-    margin-left: 100px;
+    margin-left: 250px;
     width: 200px;
-}
+} 
 .links{
     display: flex;
 }
