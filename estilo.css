@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-style: sans-serif;
+}
+#header{
+    display: inline-grid;
+    width: 100%;
+}
+#header #logo-search{
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+    margin-top: 3px;
+    float: right;
+}
+#logo-search{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0px 0px 0px auto;
+}
+
+#logo button{
+    width: 176px;
+    height: 80px;
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: white;
+}
+
+#search{
+    padding-right: 4px;
+    align-self: center;
+}
+
+#input{
+
+    border-radius: 10px;
+    height: 23px;
+
+}
+
+nav{
+    display: flex;
+    background-color: rgb(0, 0, 48);
+    margin-top: 4px;
+    width: 100%;
+}
+ul#nav1{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-left: 48px;
+}
+.paginas{
+    list-style:none;
+    color: white;
+}
+
+ul#nav2{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 72%;
+    padding-right: 4px;
+}
+
+.logar{
+    list-style: none;
+    margin-left: 13px;
+    color: white;
+}
+
+.logar button{
+    background-color: rgb(64, 64, 128);
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    height: 23px;
+    width: 101px;
+}
+form {
+    
+    width: 40%;
+    margin: 118px auto;
+    border: solid;
+    border-color:  rgb(18, 18, 44);
+    border-radius: 42px;
+    padding-bottom: 36px;
+    background-color: rgb(18, 18, 44);
+
+}
+#display{
+    display: flex;
+    justify-content: center;
+}
+
+#infos{
+    display: grid;
+    text-align: center;
+    width: 60%;
+    
+}
+h1{
+    text-align: center;
+    color: rgb(160, 158, 158);
+
+}
+
+#email{
+    height: 30px;
+    margin-bottom: 14px;
+    border-radius: 18px;
+}
+
+#senha{
+    height: 30px;
+    border-radius: 18px;
+}
+
+p{
+    margin: 5px;
+    color: rgb(160, 158, 158);
+
+}
+
+#entrar{
+    background-color: rgb(64, 64, 128);
+    margin: 0 auto;
+    border-color: white;
+    border-radius: 14px;
+    width: 50%;
+    font-size: 1.1em;
+    height: 35px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(0, 0, 48);
+    
+}
+
+h3{
+    border: black solid 1px;
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: white;
+    color: rgb(160, 158, 158);
+    margin-left: 3px;
+    width: 106px;
+
+}
