@@ -1,0 +1,17 @@
+#titulo_form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.texto_form{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#formulario{
+    width: 40%;
+    margin: 50px auto;
+    
+}
