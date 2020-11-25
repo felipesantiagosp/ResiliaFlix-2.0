@@ -17,7 +17,7 @@ h1{
     width: 500px;
     height: 300px;
     margin-left: 400px;
-    margin-top: 100px;
+    margin-top: 200px;
     border-radius: 30px;
     background-color: #1c2b2d;
 }
@@ -28,11 +28,12 @@ h1{
 }
 .input{
     margin:10px;
-    width: 400px;
+    width: 300px;
     border-radius: 10px;
     height: 30px;
     border: none;
     background-color: #f6f5f3;
+    align-self: center;
 }
 #entrar{
     align-self: center;
@@ -48,4 +49,16 @@ p{
 align-self: center;
 padding: 10px;
 margin-bottom: 10px;
+}
+.senha-style  {
+    font-style: default;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.senha-style:hover{
+    color: rgb(238, 228, 228);
+    text-decoration: none;
+
 }

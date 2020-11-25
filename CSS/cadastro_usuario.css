@@ -1,4 +1,3 @@
-
 #titulo_form{
     display: flex;
     align-items: center;
@@ -14,6 +13,7 @@
 #formulario{
     width: 40%;
     margin: 50px auto;
+    height: 300px;
     
     
 }

@@ -57,7 +57,7 @@
                     </ul>
                     <ul class="alinhamento">
                         <li class="nav-item">
-                                <a class="nav-link font-color" href="#">Login</a>    
+                            <a class="nav-link font-color alinhar-login" href="#">Login</a>    
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link font-color" href="cadastro_usuario.html">
@@ -71,10 +71,11 @@
            
           
         </div>
+        
       </header>
         <!-- NavBar Fim -->
 
-            <main>
+            <main class="login-cadastro">
                 <form class="formula">
                     <h1>LOGIN</h1>
                         <div id="display">
@@ -82,11 +83,38 @@
                                 
                                 <input type="email" class="input" required placeholder="Email">
                                 <input type="password" class="input" required placeholder="Senha">
-                                <p>Esqueceu a senha?</p>
+                                <a href="" class="senha-style" data-toggle="modal" data-target="#modal-senha" data-whatever="@getbootstrap"> Esqueceu a senha?</a>
                                 <input type="submit" value="Entrar" id="entrar">
                             </div>
                         </div>
                 </form>
+                
+
+                <div class="modal fade" id="modal-senha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Recupere sua senha</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group">
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar senha</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </main>
         
         <footer>
@@ -94,7 +122,7 @@
                
             
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                    <img src="../imagens/logo1.png" alt="" width="200px">
+                    <img src="../imagens/logo1.png" alt="" width="100px">
                                   
                 </div>
             </nav>

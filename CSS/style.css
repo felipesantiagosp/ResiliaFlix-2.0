@@ -1,9 +1,16 @@
+main{
+    height:  auto;
+    align-items: center;
+}
+.login-cadastro{
+    height: 600px;
+}
 .logo-search{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 30px; 
-    margin-left: 450px;
+    margin-left: 550px;
 }
 .procurar {
     display: flex;
@@ -16,7 +23,11 @@
     color: white;
     font-weight: bold;
     margin-left: 5px;
-    height: 20px;
+    height: 30px;
+    align-self: center;
+}
+.login{
+    align-self: center;
 }
 .botao1:hover{
     background: #1d5a70;
@@ -53,12 +64,16 @@
 } */
 .alinhamento{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin-bottom: 0px;
+    justify-content: center;
+    /* align-content: center; */
+    /* margin-bottom: 0px; */
 }
 .alinhamento1{
     margin-left: 30px;
+}
+.alinhar-login{
+    align-self: center;
+    margin-top: 7px;
 }
 footer{
     position: relative;
