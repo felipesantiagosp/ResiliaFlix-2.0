@@ -3,6 +3,9 @@ main{
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+}
 
 .login-cadastro{
     height: 600px;
@@ -10,9 +13,10 @@ main{
 .logo-search{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 30px; 
     margin-left: 550px;
+}
 }
 .procurar {
     display: flex;
@@ -28,10 +32,27 @@ main{
     height: 30px;
     align-self: center;
 }
+.botao2{
+ 
+    border: 1px solid #1c2b2d;
+    background: #1f6f8b;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    height: 30px;
+    align-self: center;
+    width: 120px;
+    text-decoration: none;
+}
 .login{
     align-self: center;
 }
 .botao1:hover{
+    background: #1d5a70;
+    color: white;
+}
+.botao2:hover{
     background: #1d5a70;
 }
 #search{
