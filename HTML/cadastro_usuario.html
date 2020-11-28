@@ -81,18 +81,18 @@
       <form id="formulario">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
           </div>
           <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+            <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
           </div>
           <div class="form-group col-md-6">
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Digite a novamente a Senha">
+            <input type="password" class="form-control" id="inputSenha2" placeholder="Digite a novamente a Senha">
           </div>
         </div>
        
@@ -104,26 +104,33 @@
             <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputCity" placeholder="UF">
+            <input type="text" class="form-control" id="inputUF" placeholder="UF">
             </select>
           </div>
         </div>
         <div class="form-group">
           <input type="text" class="form-control" id="inputAddress" placeholder="Logradouro">
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id='cadastrar'>Cadastrar</button>
       </form>
+      
+      <div id="modal">
+
+      </div>
+      <script src="../JS/cadastroUsuarioRequest.js"></script>
+      <script src="../JS/modalCadastro.js"></script>
+
     </main>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c2b2d">
-           
-        
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                <img src="../imagens/logo1.png" alt="" width="100px">
-                              
-            </div>
-        </nav>
-       
-    </footer>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c2b2d">
+         
+      
+          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+              <img src="../imagens/logo1.png" alt="" width="100px">
+                            
+          </div>
+      </nav>
+     
+  </footer>
 </body>
 </html>
