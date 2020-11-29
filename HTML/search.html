@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="../CSS/search.css"></link>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
@@ -20,7 +22,7 @@
         <div class="logo-search text-monospace">
             <img src="../imagens/logo1.png" alt="" width="200px">
             <div class="procurar ">
-              <a href=""><button class="botao2"> Search</button></a>
+              <a href="search.html"><button class="botao2"> Search</button></a>
             </div>
         </div>
         <!-- NavBar início -->
@@ -30,10 +32,10 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
             
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                  <ul class="alinhamento alinhamento1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="alinhamento alinhamento1 navbar-nav mr-auto">
                     <li class="nav-item active">
-                    <a class="nav-link font-color" href="#">Início<span class="sr-only">(current)</span></a>
+                    <a class="nav-link font-color" href="inicio.html">Início<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle font-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,7 +76,18 @@
         <!-- NavBar Fim -->
 
         <main>
-          
+            <form class="input-search">
+                <input class='cx-texto' type="text" placeholder="Filme">
+                <input class="input-bt" type="button" value="Search">
+            </form>
+            <section class="movies">
+                
+            </section>
+
+            <script src="../js/filme.js"></script>
+
+
+
         </main>
         <footer class="fixed-bottom ">
             <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c2b2d">
@@ -87,6 +100,7 @@
             </nav>
            
         </footer>
+        
     
 </body>
 </html>

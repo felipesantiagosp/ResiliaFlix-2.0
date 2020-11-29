@@ -1,0 +1,19 @@
+.input-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.cx-texto{
+    border: solid 1px #1c2b2d;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.input-bt{
+    border: solid 1px;
+    border-radius: 20px;
+    width: 100px;
+    background: #1D5A70;
+    color: white;
+}
