@@ -6,6 +6,7 @@ main{
     width: 100%;
     height: auto;
     justify-content: space-around;
+    
 }
 .titulo-filmes{
     margin-bottom: 50px;
@@ -31,4 +32,19 @@ main{
 
 .filme img:hover{
     transform: scale(1.1);
+}
+@media(max-width: 768px){
+    main{
+        margin-bottom: 50px;
+    }
+    .filme{
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    .filme img{
+        margin: auto;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
 }

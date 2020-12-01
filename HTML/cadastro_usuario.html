@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/cadastro_usuario.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
     <title>Novo Usuário</title>
 </head>
 <body>
-    <header>
+  <header>
 
-        <div class="logo-search">
-            <img src="../imagens/logo1.png" alt="" width="200px">
-            <div class="procurar ">
-                <input type="text" class="form-inline my-2 my-lg-0" id="search" placeholder="SEARCH" >
-                <button class="botao"> 	&#x1F50E</button>
-            </div>
-        </div>
-        <!-- NavBar início -->
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark text-monospace" style="background-color: #1c2b2d">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="logo-search text-monospace">
+      <img src="../imagens/logo1.png" alt="" width="200px">
+      <div class="procurar ">
+        <a href="search.html"><button class="botao2"> Search</button></a>
+      </div>
+  </div>
+  <!-- NavBar início -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark text-monospace " style="background-color: #1c2b2d">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="alinhamento alinhamento1 navbar-nav mr-auto">
+              <li class="nav-item active">
+              <a class="nav-link font-color" href="inicio.html">Início<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle font-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categorias
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="categoriasAcao.html">Ação</a>
+                  <a class="dropdown-item" href="categoriasComedia.html">Comédia</a>
+                  <a class="dropdown-item" href="categoriasDocumentarios.html">Documentários</a>
+                  <a class="dropdown-item" href="categoriasDrama.html">Drama</a>
+                  <a class="dropdown-item" href="categoriasRomance.html">Romance</a>
+                  <a class="dropdown-item" href="categoriasSuspense.html">Suspense</a>
+                  <a class="dropdown-item" href="categoriasTerror.html">Terror</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  </div>
+              <li class="nav-item">
+              <a class="nav-link font-color" href="#">Contatos</a>
+              </li>
             
+<<<<<<< HEAD
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                   <ul class="alinhamento alinhamento1">
                     <li class="nav-item active">
@@ -68,11 +91,26 @@
                 </div>
             </nav>
            
+=======
+              </ul>
+              <ul class="alinhamento">
+                  <li class="nav-item">
+                    <a class="nav-link font-color alinhar-login" href="login2.html">Login</a>    
+                  </li>
+                  <li class="nav-item">
+                          <a class="nav-link font-color" href="cadastro_usuario.html">
+                              <button class="botao1">Cadastre-se</button>
+                          </a>    
+                  </li>
+              </ul>
+>>>>>>> bab05be78f4eed6a8f02d3e0f017e9b29066dc80
           
-        </div>
-        <!-- NavBar Fim -->
-       
-    </header>
+
+      </nav>
+     
+    
+  </div>
+  </header>
     <main class="login-cadastro">
 
       <div id="titulo_form">
@@ -81,18 +119,18 @@
       <form id="formulario">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
           </div>
           <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+            <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
           </div>
           <div class="form-group col-md-6">
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Digite a novamente a Senha">
+            <input type="password" class="form-control" id="inputSenha2" placeholder="Digite a novamente a Senha">
           </div>
         </div>
        
@@ -104,26 +142,36 @@
             <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputCity" placeholder="UF">
+            <input type="text" class="form-control" id="inputUF" placeholder="UF">
             </select>
           </div>
         </div>
         <div class="form-group">
           <input type="text" class="form-control" id="inputAddress" placeholder="Logradouro">
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <div id="botao">
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id='cadastrar'>Cadastrar</button>
+        </div>
+        
       </form>
+      
+      <div id="modal">
+
+      </div>
+      <script src="../JS/cadastroUsuarioRequest.js"></script>
+      <script src="../JS/modalCadastro.js"></script>
+
     </main>
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c2b2d">
-           
-        
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                <img src="../imagens/logo1.png" alt="" width="100px">
-                              
-            </div>
-        </nav>
-       
-    </footer>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c2b2d">
+         
+      
+          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+              <img src="../imagens/logo1.png" alt="" width="100px">
+                            
+          </div>
+      </nav>
+     
+  </footer>
 </body>
 </html>
