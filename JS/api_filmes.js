@@ -13,6 +13,7 @@ class Model {
         this.plot = '';
         this.rating = '';
         this.genre = '';
+        this.error = '';
     }
 
     buscaImagem() // foi chamada pelo controlador
@@ -53,12 +54,21 @@ class Model {
     {
         console.log('Model atualizando as variveis do view');
 
+        this.error = dados.Error
+        console.log(this.error);
+        
+
         this.titulo = dados.Title;
         this.image = dados.Poster;
         this.plot = dados.Plot; // repo url vai retornar um objeto
         this.released_date = dados.Released;
         this.rating = dados.imdbRating;
         this.genre = dados.Genre;
+    }
+
+    getError()
+    {
+        return this.error;
     }
 
     getTitulo()
@@ -100,21 +110,37 @@ class View
     {
         console.log('View recebendo tudo e alterando tudo')
 
+        if(model.getError() != undefined){
+            let sinistro = document.createElement('div'); //cria uma div sinistra para receber as variaveis atualizadas do API
+            sinistro.setAttribute("id","conteudo");
 
-        let sinistro = document.createElement('div'); //cria uma div sinistra para receber as variaveis atualizadas do API
-        sinistro.setAttribute("id","conteudo");
+            sinistro.innerHTML = 
+            `
+            <h1 class="texto_form" >Filme não encontrado</h1>
+            <img class="triste_png" src = "../imagens/triste.png"  alt="" width="100px">
+            
+            ` //crio para cada vez que aperta o botao elementos na div que recebem os dados da API
 
-        sinistro.innerHTML = 
-        `
-            <p>${model.getTitulo()}</p>
-            <img src = ${model.getImage()}>
-            <p >${model.getPlot()}</p>
-            <p >${model.getReleasedDate()}</p>
-            <p >${model.getRating()}</p>
-            <p >${model.getGenre()}</p>
-        ` //crio para cada vez que aperta o botao elementos na div que recebem os dados da API
+            document.body.appendChild( sinistro ); //ultima parte, adiciono a div sinistra no body da pagina mostrando para o usuario
+            
+        } else {
 
-        document.body.appendChild( sinistro ); //ultima parte, adiciono a div sinistra no body da pagina mostrando para o usuario
+            let sinistro = document.createElement('div'); //cria uma div sinistra para receber as variaveis atualizadas do API
+            sinistro.setAttribute("id","conteudo");
+    
+            sinistro.innerHTML = 
+            `
+                <p>${model.getTitulo()}</p>
+                <img src = ${model.getImage()}>
+                <p >${model.getPlot()}</p>
+                <p >${model.getReleasedDate()}</p>
+                <p >${model.getRating()}</p>
+                <p >${model.getGenre()}</p>
+            ` //crio para cada vez que aperta o botao elementos na div que recebem os dados da API
+    
+            document.body.appendChild( sinistro ); //ultima parte, adiciono a div sinistra no body da pagina mostrando para o usuario
+        }
+    
     }
 }
 
