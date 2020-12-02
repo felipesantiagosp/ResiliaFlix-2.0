@@ -3,7 +3,7 @@
     justify-content: center;
     margin-top: 60px;
 }
-.cx-texto{
+.enviar{
     border: solid 1px #1c2b2d;
     border-radius: 5px;
     height: 40px;
@@ -16,4 +16,22 @@
     width: 100px;
     background: #1D5A70;
     color: white;
+}
+
+
+
+.texto_form{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 190%;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.triste_png{
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: block;
 }
