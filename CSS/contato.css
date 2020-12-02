@@ -1,0 +1,72 @@
+main{
+    display: flex;
+    height: auto;
+}
+.flex-card{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    
+}
+.card{
+    margin-right: 50px;
+}
+.card-img-top
+{
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px auto;
+    width: 90px;
+    height: 80px;
+
+    
+/*     padding: 10px;
+ */}
+
+.card-title 
+{
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    width: 90px;
+    height: 150px;
+}   
+.cima{
+    margin-top: auto;
+    display: flex;
+    margin-bottom: auto;
+}
+.card-title{
+    font-weight: bolder;
+    font-family: 'Sulphur Point', sans-serif;
+    
+}
+.baixo{
+    margin-top: auto;
+    display: flex;
+    margin-bottom: auto;
+}
+p{
+    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
+
+}
+
+@media(max-width: 915px){
+    .flex-card{
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+    
+    .card{
+        margin-bottom: 30px;
+        width: auto;
+        align-items: center;
+        align-self: center;
+    }
+
+}
