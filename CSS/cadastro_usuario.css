@@ -10,12 +10,15 @@
     margin: 0 auto;
     font-size: 190%;
     font-weight: bold;
+    font-family: 'Sulphur Point', sans-serif;
 }
 
 #formulario{
     width: 60%;
     margin: 50px auto;
     height: 400px;
+    font-family: 'Sulphur Point', sans-serif;
+
        
 }
 

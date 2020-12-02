@@ -42,9 +42,10 @@ inputBotao.addEventListener("click", function(event){
  
             } else {
                 posterFilmes.innerHTML = `
-            <h1 class="texto_form" >Filme não encontrado</h1>
-            <img class="triste_png" src = "../imagens/triste.png"  alt="" width="100px">
-                        `
+                <h1 class="texto_form" >Filme não encontrado</h1>
+                <img class="triste_png" src = "../imagens/triste.png"  alt="" width="100px">
+                
+                `
             }
     }
     

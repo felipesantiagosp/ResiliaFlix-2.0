@@ -1,13 +1,25 @@
+main{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+footer{
+    bottom: 0%;
+    background: absolute;
+}
 .input-search{
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
-.enviar{
+.cx-texto{
     border: solid 1px #1c2b2d;
     border-radius: 5px;
     height: 40px;
     margin-right: 20px;
+    font-family: 'Sulphur Point', sans-serif;
+
 }
 
 .input-bt{
@@ -16,22 +28,51 @@
     width: 100px;
     background: #1D5A70;
     color: white;
+    font-family: 'Sulphur Point', sans-serif;
+
 }
 
-
-
-.texto_form{
-    text-align: center;
-    margin: 0 auto;
-    font-size: 190%;
-    font-weight: bold;
-    margin: 20px;
+.poster{
+    align-self: center;
+    width: 200px;
+    margin-top: 40px;
+    border: inherit;
+    border-radius: 5px;
+}
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.triste_png{
+.titulo-filme{
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.info-filme{
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    display: block;
+
+}
+.descricao-filme{
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+
+
+}
+.modal-title{
+    font-family: 'Heebo', sans-serif;
+
 }

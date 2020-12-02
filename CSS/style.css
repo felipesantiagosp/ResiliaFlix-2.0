@@ -21,6 +21,8 @@ a{
 .procurar {
     display: flex;
     justify-content: space-around;
+    font-family: 'Jost', sans-serif;
+
 }
 .botao1{
     border: 1px solid #1c2b2d;
@@ -62,6 +64,8 @@ a{
     height: 30px;
     margin-left: 250px;
     width: 200px;
+
+    
 } 
 .links{
     display: flex;
@@ -77,6 +81,7 @@ a{
     color: white;
     font-weight: bold;
     margin-left: 5px;
+    
 }
 .botao:hover{
     background: rgb(233, 222, 222)
@@ -88,6 +93,11 @@ a{
     justify-content: center;
     align-items: center;
     
+}
+
+.navbar{
+    font-family: 'Jost', sans-serif;
+
 }
 
 .nav-link.font-color.alinhar-login{

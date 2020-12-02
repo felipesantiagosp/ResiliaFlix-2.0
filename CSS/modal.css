@@ -7,6 +7,7 @@
     color: gold;
     font-weight: bold;
     font-size: 2em;
+    font-family: 'Heebo', sans-serif;
 }
 strong{
 
@@ -20,11 +21,16 @@ strong{
 .filme-img{
     width: 160px;
     text-align: center;
+
 }
 
 .resumo{
     margin-top: 10px;
-    color: rgb(207, 206, 206);
+  
+    font-family: 'Work Sans', sans-serif;
+    line-height: 30px;
+
+
 }
 
 .data-avaliacao{
@@ -40,12 +46,18 @@ strong{
 .avaliacaop{
     color: rgb(22, 202, 22);
     font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 30px;
+
 }
 
 .genero-classificacao{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 30px;
+
 }
 
 .avaliacao-txt{
